@@ -1,0 +1,5 @@
+int getchar(void)
+
+returns the next input character each time it is called , EOF(defined in <stdio.h>) when it encounters end of file.
+
+

@@ -1,0 +1,122 @@
+ 
+if value is defined as const u cant't change its value later on...
+eg:--
+const float b = 7.3333
+b = 7.22 (it will give error because we changed the value of b )
+
+there are two ways to define constant in c:--
+
+const keyword
+#define preprocessor
+
+
+FORMAT SPECIFIRES:
+
+%lf : double
+%l : long
+%LF  :long double
+%lu  : unsigned long
+
+
+ESCAPE SEQUENCES LIST IN C::
+
+\a : alarm or beep
+\b : backspace
+\f : form feed
+\n : newline
+\r : carrige return
+\t : tab(horizontal)
+\v : vertical tab
+\\ : backslash
+\* : single quote
+\" : double quote
+\? : question mark
+\nnn : octal number
+\xhh : hexadecimal number
+\0 : NULL
+
+
+RULE FOR SWITCH CASE:
+
+switch expression can either be int or char
+case must either be int or char 
+all cases must come under switch
+break is not must
+
+
+DO WHILE LOOP:
+
+if want our code to execute once in a loop we use do while
+
+syntx
+
+do{
+
+code.............
+
+} while (condition true)
+
+it executes loop atleast one
+
+
+// for existing from nested loop break is not efficient there we can  use goto to come out of all loops at once//
+
+
+TYPE CASTING:
+
+float b =54 
+
+converting it into int == (int) b  // converted into int datatype
+
+if float b= 54/5; it will give result as 10.000
+because it evaluated in integer form
+
+if we write float b = (float) 54/5; it will give correct value which is 10.800 because it evaluated in float 
+
+**to write chracter in printf always use single quote to prints string write it in double quote.  
+
+
+types of function:
+
+int star(int a ,int b);with agrument and with return value.
+void star(int a , int b);with argument and and without return value.
+int star();without argument and with return value.
+void star();witout argument and without return value.
+
+**while(1): it will continue running in loop until u wont put break in program
+
+NULL POINTER:
+
+int * ptr =NULL;
+
+pointer that is not assigned to any value
+
+arr[i] == *(arr +i)
+if arr is pointer to arr[0] then arr+i is pointer to arr[i]
+
+=1000 +32 *sizeof(int)
+
+&arr[1] == arr +1 : both will print address second element in array
+
+*(&arr[0]) == *(arr) : will print value of first element in array
+
+*(&arr[1]) == *(arr+1) :will print value of second element in array
+
+int arr[] ={1,2,3};
+arr++; : not valid give error because arr is constant
+
+int* arrayptr = arr;
+arrayptr++; :it is valid
+
+int main()
+{
+	char a='2';
+	char* ptra =&a;
+	printf("%d\n",ptra);
+	printf("%d",ptra+2);
+	return 0;
+}
+
+output: 6422235
+	6422237 because character size is 2 so it will increment with + 2 size
+
